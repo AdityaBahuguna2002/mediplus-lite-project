@@ -1,10 +1,10 @@
 FROM php:8.2-cli
 
 # Set working directory
-WORKDIR /*/**/html
+WORKDIR /app
 
 # Copy all project files
-COPY . .
+COPY . /app
 
 # Expose port 8000
 EXPOSE 8000
